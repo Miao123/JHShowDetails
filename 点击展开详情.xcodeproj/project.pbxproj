@@ -15,6 +15,8 @@
 		DD0757641EE6D3D600518D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0757621EE6D3D600518D28 /* LaunchScreen.storyboard */; };
 		DD07576F1EE6D3D700518D28 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD07576E1EE6D3D700518D28 /* ______Tests.m */; };
 		DD07577A1EE6D3D700518D28 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0757791EE6D3D700518D28 /* ______UITests.m */; };
+		DD0757891EE6D4EE00518D28 /* OpenDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0757881EE6D4EE00518D28 /* OpenDetailsView.m */; };
+		DD07578D1EE6DE3C00518D28 /* NSString+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = DD07578C1EE6DE3C00518D28 /* NSString+Font.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		DD0757751EE6D3D700518D28 /* 点击展开详情UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "点击展开详情UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0757791EE6D3D700518D28 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		DD07577B1EE6D3D700518D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0757871EE6D4EE00518D28 /* OpenDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenDetailsView.h; sourceTree = "<group>"; };
+		DD0757881EE6D4EE00518D28 /* OpenDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenDetailsView.m; sourceTree = "<group>"; };
+		DD07578A1EE6D73800518D28 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		DD07578B1EE6DE3C00518D28 /* NSString+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Font.h"; sourceTree = "<group>"; };
+		DD07578C1EE6DE3C00518D28 /* NSString+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Font.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,11 @@
 				DD0757581EE6D3D600518D28 /* AppDelegate.m */,
 				DD07575A1EE6D3D600518D28 /* ViewController.h */,
 				DD07575B1EE6D3D600518D28 /* ViewController.m */,
+				DD0757871EE6D4EE00518D28 /* OpenDetailsView.h */,
+				DD0757881EE6D4EE00518D28 /* OpenDetailsView.m */,
+				DD07578B1EE6DE3C00518D28 /* NSString+Font.h */,
+				DD07578C1EE6DE3C00518D28 /* NSString+Font.m */,
+				DD07578A1EE6D73800518D28 /* Header.h */,
 				DD07575D1EE6D3D600518D28 /* Main.storyboard */,
 				DD0757601EE6D3D600518D28 /* Assets.xcassets */,
 				DD0757621EE6D3D600518D28 /* LaunchScreen.storyboard */,
@@ -207,6 +219,7 @@
 				TargetAttributes = {
 					DD0757501EE6D3D600518D28 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = B7UQ7WHB5T;
 						ProvisioningStyle = Automatic;
 					};
 					DD0757691EE6D3D700518D28 = {
@@ -273,9 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD07578D1EE6DE3C00518D28 /* NSString+Font.m in Sources */,
 				DD07575C1EE6D3D600518D28 /* ViewController.m in Sources */,
 				DD0757591EE6D3D600518D28 /* AppDelegate.m in Sources */,
 				DD0757561EE6D3D600518D28 /* main.m in Sources */,
+				DD0757891EE6D4EE00518D28 /* OpenDetailsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +439,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = "点击展开详情/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ganZhi.------";
+				PRODUCT_BUNDLE_IDENTIFIER = ganZhi.showDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,9 +452,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = "点击展开详情/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ganZhi.------";
+				PRODUCT_BUNDLE_IDENTIFIER = ganZhi.showDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -507,6 +526,7 @@
 				DD0757801EE6D3D700518D28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD0757811EE6D3D700518D28 /* Build configuration list for PBXNativeTarget "点击展开详情Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +535,7 @@
 				DD0757831EE6D3D700518D28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD0757841EE6D3D700518D28 /* Build configuration list for PBXNativeTarget "点击展开详情UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +544,7 @@
 				DD0757861EE6D3D700518D28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
